@@ -33,6 +33,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://the-warm-wishes-company.vercel.app"),
   title: "Warm Wishes | Luxury Handcrafted Gifts",
   description: "Thoughtfully crafted candles, chocolates and handmade soaps designed to create memorable gifting experiences.",
   openGraph: {

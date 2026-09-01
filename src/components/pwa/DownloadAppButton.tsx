@@ -65,8 +65,8 @@ export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps
 
   const handleInstallClick = async () => {
     if (isInstalled && !deferredPrompt) {
-      // Direct redirect to App homepage
-      window.location.href = "/?mode=pwa";
+      // Direct redirect to live app domain
+      window.location.href = "https://the-warm-wishes-company.vercel.app/";
       return;
     }
 
