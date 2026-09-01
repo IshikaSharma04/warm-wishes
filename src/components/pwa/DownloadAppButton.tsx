@@ -64,6 +64,12 @@ export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps
   }, []);
 
   const handleInstallClick = async () => {
+    if (isInstalled) {
+      // Directly open/navigate to app without showing any popup modal
+      window.location.href = "https://the-warm-wishes-company.vercel.app/";
+      return;
+    }
+
     if (deferredPrompt) {
       try {
         deferredPrompt.prompt();
