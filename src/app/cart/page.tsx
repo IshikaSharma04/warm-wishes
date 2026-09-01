@@ -95,10 +95,16 @@ export default function CartPage() {
             </div>
 
             {/* Coupon */}
-            <div className="mt-6">
-              <div className="flex gap-0">
-                <input type="text" placeholder="Coupon code" className="flex-1 bg-[#141210] border border-[#C8A66A]/20 text-[#E8E0D8] placeholder:text-[#E8E0D8]/40 font-poppins text-xs px-4 py-3 rounded-l-md focus:outline-none focus:border-[#C8A66A] transition-colors" />
-                <button className="bg-[#252018] text-[#E8E0D8] border border-[#C8A66A]/20 border-l-0 font-poppins text-xs uppercase tracking-widest px-4 py-3 rounded-r-md hover:bg-[#C8A66A] hover:text-[#141210] hover:border-[#C8A66A] transition-colors">Apply</button>
+            <div className="mt-6 w-full">
+              <div className="flex w-full overflow-hidden rounded-xl border border-[#C8A66A]/20 bg-[#141210]">
+                <input
+                  type="text"
+                  placeholder="Coupon code"
+                  className="flex-1 min-w-0 bg-transparent text-[#E8E0D8] placeholder:text-[#E8E0D8]/40 font-poppins text-xs px-4 py-3 outline-none"
+                />
+                <button className="bg-[#C8A66A] text-[#141210] font-poppins text-xs uppercase tracking-wider px-5 py-3 shrink-0 font-semibold hover:bg-[#b8935a] transition-colors">
+                  Apply
+                </button>
               </div>
             </div>
 
