@@ -183,7 +183,7 @@ export default function HomePage() {
       <section className="py-24 bg-[#1C1916]">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeader eyebrow="Loved By All" title="Best Sellers" />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-8">
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-6">
             {BESTSELLERS.map((p) => <ProductCard key={p.id} {...p} />)}
           </div>
         </div>

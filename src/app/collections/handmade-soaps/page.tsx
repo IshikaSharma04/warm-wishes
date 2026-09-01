@@ -40,7 +40,7 @@ export default function SoapsPage() {
             <div className="h-px w-10 bg-[#C8A66A]/40" /><div className="w-1.5 h-1.5 rotate-45 bg-[#C8A66A]" /><div className="h-px w-10 bg-[#C8A66A]/40" />
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-8">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-6">
           {SOAPS.map((s) => <ProductCard key={s.id} {...s} category="Handmade Soaps" />)}
         </div>
         <FeatureGrid features={FEATURES} />
