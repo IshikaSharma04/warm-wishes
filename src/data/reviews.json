@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Priya M.",
+    "rating": 5,
+    "text": "Absolutely stunning packaging and the candles smell divine. Gifted to my mother and she was over the moon!",
+    "comment": "Absolutely stunning packaging and the candles smell divine. Gifted to my mother and she was over the moon!",
+    "date": "Aug 28, 2026"
+  },
+  {
+    "id": "2",
+    "name": "Rahul S.",
+    "rating": 5,
+    "text": "The chocolates were SO good — melt in your mouth quality. Already ordered again for a wedding.",
+    "comment": "The chocolates were SO good — melt in your mouth quality. Already ordered again for a wedding.",
+    "date": "Aug 26, 2026"
+  },
+  {
+    "id": "3",
+    "name": "Ananya Sharma",
+    "rating": 5,
+    "text": "The scented candle bouquet looks breathtaking and smells incredible! Natural, fragrant and lasts forever. Best gifting brand in India!",
+    "comment": "The scented candle bouquet looks breathtaking and smells incredible! Natural, fragrant and lasts forever. Best gifting brand in India!",
+    "date": "Aug 20, 2026"
+  }
+]
