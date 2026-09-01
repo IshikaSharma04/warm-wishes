@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Download, Smartphone, X, CheckCircle2, Share } from "lucide-react";
+import { Download, Smartphone, X, CheckCircle2, Share, ExternalLink } from "lucide-react";
 
 interface DownloadAppButtonProps {
   variant?: "navbar" | "mobile" | "footer" | "banner";
@@ -10,19 +10,31 @@ interface DownloadAppButtonProps {
 export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps) {
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [showModal, setShowModal] = useState(false);
+  const [isStandalone, setIsStandalone] = useState(false);
   const [isInstalled, setIsInstalled] = useState(false);
   const [isIOS, setIsIOS] = useState(false);
 
   useEffect(() => {
-    // Check if app is running in standalone mode (already installed)
-    if (
+    // 1. Detect if running inside installed PWA app (standalone mode)
+    const standalone =
       window.matchMedia("(display-mode: standalone)").matches ||
-      (window.navigator as any).standalone === true
-    ) {
+      (window.navigator as any).standalone === true;
+
+    if (standalone) {
+      setIsStandalone(true);
       setIsInstalled(true);
+      try {
+        localStorage.setItem("warm_wishes_app_installed", "true");
+      } catch (e) {}
+    } else {
+      try {
+        if (localStorage.getItem("warm_wishes_app_installed") === "true") {
+          setIsInstalled(true);
+        }
+      } catch (e) {}
     }
 
-    // Detect iOS
+    // 2. Detect iOS Safari
     const userAgent = window.navigator.userAgent.toLowerCase();
     if (/iphone|ipad|ipod/.test(userAgent)) {
       setIsIOS(true);
@@ -37,6 +49,9 @@ export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps
 
     const handleAppInstalled = () => {
       setIsInstalled(true);
+      try {
+        localStorage.setItem("warm_wishes_app_installed", "true");
+      } catch (e) {}
       setDeferredPrompt(null);
     };
 
@@ -49,11 +64,20 @@ export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps
   }, []);
 
   const handleInstallClick = async () => {
+    if (isInstalled && !deferredPrompt) {
+      // Open App / Homepage
+      window.location.href = "/?mode=pwa";
+      return;
+    }
+
     if (deferredPrompt) {
       deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
       if (outcome === "accepted") {
         setIsInstalled(true);
+        try {
+          localStorage.setItem("warm_wishes_app_installed", "true");
+        } catch (e) {}
       }
       setDeferredPrompt(null);
     } else {
@@ -61,59 +85,13 @@ export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps
     }
   };
 
+  // If user is already running INSIDE the standalone PWA app, hide all download prompts
+  if (isStandalone) return null;
 
-  if (variant === "navbar") {
-    return (
-      <>
-        <button
-          onClick={handleInstallClick}
-          className="inline-flex items-center gap-1.5 sm:gap-2 bg-[#C8A66A]/15 hover:bg-[#C8A66A]/25 border border-[#C8A66A]/40 text-[#C8A66A] text-[10px] sm:text-[11px] font-poppins font-medium uppercase tracking-wider px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full transition-all duration-300 shadow-sm shrink-0"
-          title="Download Warm Wishes App"
-        >
-          <Download size={12} className="animate-bounce" />
-          <span>Get App</span>
-        </button>
-
-        {showModal && <InstallModal isIOS={isIOS} onClose={() => setShowModal(false)} />}
-      </>
-    );
-  }
-
-  if (variant === "mobile") {
-    return (
-      <>
-        <button
-          onClick={handleInstallClick}
-          className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-[#C8A66A] to-[#B59255] text-[#141210] font-poppins font-semibold text-sm uppercase tracking-widest py-3.5 rounded-lg shadow-lg shadow-[#C8A66A]/20 transition-all mt-4"
-        >
-          <Download size={18} />
-          <span>Download App</span>
-        </button>
-
-        {showModal && <InstallModal isIOS={isIOS} onClose={() => setShowModal(false)} />}
-      </>
-    );
-  }
-
-  if (variant === "footer") {
-    return (
-      <>
-        <button
-          onClick={handleInstallClick}
-          className="inline-flex items-center gap-2.5 text-xs font-poppins text-[#C8A66A] hover:text-[#E8E0D8] transition-colors group"
-        >
-          <Smartphone size={16} className="group-hover:scale-110 transition-transform" />
-          <span className="underline underline-offset-4 decoration-[#C8A66A]/40 group-hover:decoration-[#E8E0D8]">
-            Download App
-          </span>
-        </button>
-
-        {showModal && <InstallModal isIOS={isIOS} onClose={() => setShowModal(false)} />}
-      </>
-    );
-  }
-
+  // Banner variant: Hide banner if already installed
   if (variant === "banner") {
+    if (isInstalled) return null;
+
     return (
       <>
         <div className="bg-[#1C1916] border-b border-[#C8A66A]/20 px-3 py-2 flex items-center justify-between text-xs text-[#E8E0D8]">
@@ -129,6 +107,78 @@ export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps
             <span>Install</span>
           </button>
         </div>
+
+        {showModal && <InstallModal isIOS={isIOS} onClose={() => setShowModal(false)} />}
+      </>
+    );
+  }
+
+  // Navbar variant: Switch to "Open App" if already installed
+  if (variant === "navbar") {
+    return (
+      <>
+        <button
+          onClick={handleInstallClick}
+          className="inline-flex items-center gap-1.5 sm:gap-2 bg-[#C8A66A]/15 hover:bg-[#C8A66A]/25 border border-[#C8A66A]/40 text-[#C8A66A] text-[10px] sm:text-[11px] font-poppins font-medium uppercase tracking-wider px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full transition-all duration-300 shadow-sm shrink-0"
+          title={isInstalled ? "Open Warm Wishes App" : "Download Warm Wishes App"}
+        >
+          {isInstalled ? (
+            <>
+              <Smartphone size={12} className="text-[#C8A66A]" />
+              <span>Open App</span>
+            </>
+          ) : (
+            <>
+              <Download size={12} className="animate-bounce" />
+              <span>Get App</span>
+            </>
+          )}
+        </button>
+
+        {showModal && <InstallModal isIOS={isIOS} onClose={() => setShowModal(false)} />}
+      </>
+    );
+  }
+
+  // Mobile Drawer variant: Switch to "Open App" if installed
+  if (variant === "mobile") {
+    return (
+      <>
+        <button
+          onClick={handleInstallClick}
+          className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-[#C8A66A] to-[#B59255] text-[#141210] font-poppins font-semibold text-sm uppercase tracking-widest py-3.5 rounded-lg shadow-lg shadow-[#C8A66A]/20 transition-all mt-4"
+        >
+          {isInstalled ? (
+            <>
+              <Smartphone size={18} />
+              <span>Open App</span>
+            </>
+          ) : (
+            <>
+              <Download size={18} />
+              <span>Download App</span>
+            </>
+          )}
+        </button>
+
+        {showModal && <InstallModal isIOS={isIOS} onClose={() => setShowModal(false)} />}
+      </>
+    );
+  }
+
+  // Footer variant: Switch to "Open App" if installed
+  if (variant === "footer") {
+    return (
+      <>
+        <button
+          onClick={handleInstallClick}
+          className="inline-flex items-center gap-2.5 text-xs font-poppins text-[#C8A66A] hover:text-[#E8E0D8] transition-colors group"
+        >
+          <Smartphone size={16} className="group-hover:scale-110 transition-transform" />
+          <span className="underline underline-offset-4 decoration-[#C8A66A]/40 group-hover:decoration-[#E8E0D8]">
+            {isInstalled ? "Open App" : "Download App"}
+          </span>
+        </button>
 
         {showModal && <InstallModal isIOS={isIOS} onClose={() => setShowModal(false)} />}
       </>
@@ -199,4 +249,3 @@ function InstallModal({ isIOS, onClose }: { isIOS: boolean; onClose: () => void 
     </div>
   );
 }
-
