@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -9,8 +10,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-16 border-b border-[#C8A66A]/10">
           {/* Brand */}
           <div className="space-y-5">
-            <Link href="/" className="font-playfair text-3xl font-semibold text-[#E8E0D8] tracking-wide hover:text-[#C8A66A] transition-colors">
-              Warm Wishes
+            <Link href="/" className="flex items-center gap-3 group">
+              <Image
+                src="/images/logo.png"
+                alt="Warm Wishes Logo"
+                width={48}
+                height={48}
+                className="w-12 h-12 rounded-full object-cover border border-[#C8A66A]/40 shadow-sm shrink-0"
+              />
+              <span className="font-playfair text-2xl font-semibold text-[#E8E0D8] tracking-wide group-hover:text-[#C8A66A] transition-colors">
+                Warm Wishes
+              </span>
             </Link>
             <p className="font-poppins text-sm text-[#E8E0D8]/50 leading-relaxed max-w-xs">
               Handcrafted gifts made with love for every occasion.

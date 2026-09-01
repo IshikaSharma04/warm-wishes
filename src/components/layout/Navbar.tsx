@@ -40,10 +40,10 @@ export function Navbar() {
             <Image
               src="/images/logo.png"
               alt="Warm Wishes Logo"
-              width={40}
-              height={40}
+              width={56}
+              height={56}
               priority
-              className="w-10 h-10 rounded-full object-cover border border-[#C8A66A]/40 shadow-sm shrink-0"
+              className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border border-[#C8A66A]/40 shadow-md shrink-0 group-hover:scale-105 transition-transform duration-300"
             />
             <span className="font-playfair text-2xl font-semibold text-[#E8E0D8] tracking-wide group-hover:text-[#C8A66A] transition-colors duration-300">
               Warm Wishes
