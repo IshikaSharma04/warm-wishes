@@ -33,6 +33,26 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Warm Wishes | Luxury Handcrafted Gifts",
   description: "Thoughtfully crafted candles, chocolates and handmade soaps designed to create memorable gifting experiences.",
+  openGraph: {
+    title: "Warm Wishes | Luxury Handcrafted Gifts",
+    description: "Thoughtfully crafted candles, chocolates and handmade soaps designed to create memorable gifting experiences.",
+    siteName: "Warm Wishes",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Warm Wishes Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Warm Wishes | Luxury Handcrafted Gifts",
+    description: "Thoughtfully crafted candles, chocolates and handmade soaps designed to create memorable gifting experiences.",
+    images: ["/images/logo.png"],
+  },
   appleWebApp: {
     capable: true,
     title: "Warm Wishes",
