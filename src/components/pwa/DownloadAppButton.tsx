@@ -65,22 +65,29 @@ export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps
 
   const handleInstallClick = async () => {
     if (isInstalled && !deferredPrompt) {
-      // Open App / Homepage
+      // Direct redirect to App homepage
       window.location.href = "/?mode=pwa";
       return;
     }
 
     if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === "accepted") {
-        setIsInstalled(true);
-        try {
+      try {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === "accepted") {
+          setIsInstalled(true);
           localStorage.setItem("warm_wishes_app_installed", "true");
-        } catch (e) {}
+        }
+      } catch (e) {
+        console.error(e);
       }
       setDeferredPrompt(null);
     } else {
+      // Mark as installed so subsequent taps show 'Open App' and redirect to app
+      try {
+        localStorage.setItem("warm_wishes_app_installed", "true");
+        setIsInstalled(true);
+      } catch (e) {}
       setShowModal(true);
     }
   };
