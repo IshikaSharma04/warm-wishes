@@ -210,7 +210,7 @@ const CANDLES = [
     id: "candle-26", 
     name: "Creamy Vanilla Glass Jar Candle", 
     price: 199, 
-    image: "/images/Creamy-Vanilla-Glass-Jar-Candle.png", 
+    image: "/images/creamy-vanilla-glass-jar-candle.png", 
     notes: "Creamy Vanilla | Warm Honey | Soft Amber",
     badge: "Special Edition"
   },
@@ -227,7 +227,7 @@ const CANDLES = [
 const FEATURES = [
   { icon: "🕯️", label: "45+ Hours Burn Time" },
   { icon: "✨", label: "Premium Soy Wax" },
-  { icon: "🌸", label: "IFRA Certified Fragrance" },
+  { icon: "🌸", label: "Artisan Fragrance Blend" },
   { icon: "💛", label: "Hand Poured With Love" },
 ];
 
@@ -239,7 +239,7 @@ export default function ScentedCandlesPage() {
         desc="Hand-poured with love and premium fragrances for a soothing, luxurious experience in your space."
         image="/images/hero-scented-candles.png"
         imageAlt="Scented Candles"
-        bullets={["45+ Hr Burn Time", "Premium Soy Wax", "IFRA Certified"]}
+        bullets={["45+ Hr Burn Time", "Premium Soy Wax", "Handcrafted Quality"]}
       />
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">

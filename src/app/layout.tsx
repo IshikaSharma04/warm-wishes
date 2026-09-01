@@ -5,6 +5,8 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppBubble } from "@/components/ui/WhatsAppBubble";
 import { PwaRegister } from "@/components/pwa/PwaRegister";
+import { SplashScreen } from "@/components/ui/SplashScreen";
+import { DownloadAppButton } from "@/components/pwa/DownloadAppButton";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -71,7 +73,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfair.variable} ${cormorant.variable} ${poppins.variable} font-sans antialiased`}>
+        <SplashScreen />
         <PwaRegister />
+        <DownloadAppButton variant="banner" />
         <Navbar />
         <main className="min-h-screen">
           {children}
@@ -82,3 +86,4 @@ export default function RootLayout({
     </html>
   );
 }
+

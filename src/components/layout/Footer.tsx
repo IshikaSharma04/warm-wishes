@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { DownloadAppButton } from "@/components/pwa/DownloadAppButton";
 
 export function Footer() {
   return (
@@ -47,6 +48,7 @@ export function Footer() {
               <li><Link href="/collections" className="hover:text-[#C8A66A] transition-colors">Shop</Link></li>
               <li><Link href="/about" className="hover:text-[#C8A66A] transition-colors">About Us</Link></li>
               <li><Link href="/contact" className="hover:text-[#C8A66A] transition-colors">Contact</Link></li>
+              <li className="pt-2"><DownloadAppButton variant="footer" /></li>
             </ul>
           </div>
 
