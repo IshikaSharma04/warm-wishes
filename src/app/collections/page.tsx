@@ -144,7 +144,7 @@ export default function CollectionsPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+        <div className="grid grid-cols-2 gap-3.5 sm:gap-8 mb-24">
           {COLLECTIONS.map((cat, i) => (
             <Link
               href={cat.link}

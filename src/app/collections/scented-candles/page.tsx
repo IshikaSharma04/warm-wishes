@@ -247,7 +247,7 @@ export default function ScentedCandlesPage() {
           <h2 className="font-playfair text-4xl font-semibold text-[#E8E0D8]">Fragrances</h2>
           <Divider />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-8">
           {CANDLES.map((c) => (
             <ProductCard key={c.id} {...c} category="Scented Candles" />
           ))}

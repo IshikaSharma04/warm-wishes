@@ -83,11 +83,11 @@ export function ProductCard({
       </div>
 
       {/* Info */}
-      <div className="p-6 flex flex-col flex-grow">
-        <p className="font-poppins text-[10px] uppercase tracking-widest text-[#C8A66A] mb-1">{category}</p>
-        <h3 className="font-playfair text-xl font-semibold text-[#E8E0D8] mb-1">{name}</h3>
-        {notes && <p className="font-poppins text-xs text-[#E8E0D8]/60 mb-3">{notes}</p>}
-        <p className="font-playfair text-2xl font-semibold text-[#E8E0D8] mt-auto mb-5">₹{price}</p>
+      <div className="p-3.5 sm:p-6 flex flex-col flex-grow">
+        <p className="font-poppins text-[9px] sm:text-[10px] uppercase tracking-widest text-[#C8A66A] mb-1">{category}</p>
+        <h3 className="font-playfair text-base sm:text-xl font-semibold text-[#E8E0D8] mb-1 line-clamp-2">{name}</h3>
+        {notes && <p className="font-poppins text-[11px] sm:text-xs text-[#E8E0D8]/60 mb-2 sm:mb-3 line-clamp-1">{notes}</p>}
+        <p className="font-playfair text-xl sm:text-2xl font-semibold text-[#E8E0D8] mt-auto mb-3 sm:mb-5">₹{price}</p>
 
         <div className="flex flex-col gap-2 mt-auto">
           {/* Cart button / quantity stepper */}
