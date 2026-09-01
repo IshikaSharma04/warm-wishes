@@ -56,6 +56,28 @@ export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps
   }, []);
 
   const handleInstallClick = async () => {
+    if (isInstalled) {
+      const userAgent = window.navigator.userAgent.toLowerCase();
+      const isAndroid = /android/.test(userAgent);
+
+      if (isAndroid) {
+        // Android Intent forces opening the installed PWA app window
+        window.location.href =
+          "intent://the-warm-wishes-company.vercel.app/#Intent;scheme=https;package=com.android.chrome;end";
+        setTimeout(() => {
+          window.location.href = "https://the-warm-wishes-company.vercel.app/?mode=app";
+        }, 600);
+        return;
+      }
+
+      try {
+        window.open("web+warmwishes://open", "_self");
+      } catch (e) {}
+
+      window.location.href = "https://the-warm-wishes-company.vercel.app/?mode=app";
+      return;
+    }
+
     if (deferredPrompt) {
       try {
         deferredPrompt.prompt();
