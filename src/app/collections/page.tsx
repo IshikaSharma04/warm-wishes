@@ -151,7 +151,7 @@ export default function CollectionsPage() {
               key={i}
               className={`group relative overflow-hidden rounded-2xl border border-[#C8A66A]/10 shadow-sm hover:shadow-2xl hover:shadow-black/40 transition-all duration-500 ${cat.bg} flex flex-col`}
             >
-              <div className="relative h-72 w-full overflow-hidden">
+              <div className="relative h-44 sm:h-72 w-full overflow-hidden">
                 <Image
                   src={cat.image}
                   alt={cat.title}
@@ -159,10 +159,12 @@ export default function CollectionsPage() {
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className={`p-8 flex flex-col gap-3 text-[#E8E0D8]`}>
-                <h2 className="font-playfair text-3xl font-semibold uppercase tracking-wide">{cat.title}</h2>
-                <p className={`font-poppins text-sm leading-relaxed text-[#E8E0D8]/70`}>{cat.desc}</p>
-                <span className={`self-start mt-2 font-poppins text-[10px] uppercase tracking-widest border px-5 py-2 rounded-full group-hover:bg-[#C8A66A] group-hover:border-[#C8A66A] group-hover:text-[#141210] transition-colors border-[#C8A66A]/50 text-[#E8E0D8]`}>
+              <div className="p-3.5 sm:p-8 flex flex-col gap-1.5 sm:gap-3 text-[#E8E0D8] flex-grow justify-between">
+                <div>
+                  <h2 className="font-playfair text-base sm:text-2xl md:text-3xl font-semibold uppercase tracking-wide leading-tight mb-1 sm:mb-2">{cat.title}</h2>
+                  <p className="font-poppins text-xs sm:text-sm leading-relaxed text-[#E8E0D8]/70 line-clamp-3">{cat.desc}</p>
+                </div>
+                <span className="self-start mt-2 font-poppins text-[9px] sm:text-[10px] uppercase tracking-widest border px-3 py-1 sm:px-5 sm:py-2 rounded-full group-hover:bg-[#C8A66A] group-hover:border-[#C8A66A] group-hover:text-[#141210] transition-colors border-[#C8A66A]/50 text-[#E8E0D8]">
                   Explore →
                 </span>
               </div>

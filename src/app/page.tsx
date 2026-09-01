@@ -152,12 +152,12 @@ export default function HomePage() {
       <section className="py-24 bg-[#141210]">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeader eyebrow="Our Offerings" title="Shop By Category" />
-          <div className="grid grid-cols-4 gap-1.5 sm:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6">
             {CATEGORIES.map((cat) => (
               <Link
                 key={cat.title}
                 href={cat.link}
-                className="group relative overflow-hidden rounded-xl sm:rounded-2xl aspect-[3/4] flex flex-col justify-end p-2.5 sm:p-8 border border-[#C8A66A]/10 hover:border-[#C8A66A]/30 transition-all duration-500 shadow-sm hover:shadow-2xl hover:shadow-black/40"
+                className="group relative overflow-hidden rounded-2xl aspect-[3/4] flex flex-col justify-end p-4 sm:p-8 border border-[#C8A66A]/10 hover:border-[#C8A66A]/30 transition-all duration-500 shadow-sm hover:shadow-2xl hover:shadow-black/40"
               >
                 <Image
                   src={cat.image}
@@ -167,10 +167,10 @@ export default function HomePage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#141210] via-[#141210]/40 to-transparent" />
                 <div className="relative z-10">
-                  <h3 className="font-playfair text-xs sm:text-2xl font-semibold text-[#E8E0D8] mb-0.5 sm:mb-1 line-clamp-2">{cat.title}</h3>
-                  <p className="font-poppins text-[9px] sm:text-xs text-[#E8E0D8]/60 mb-1 sm:mb-4 line-clamp-1 hidden sm:block">{cat.desc}</p>
-                  <span className="font-poppins text-[8px] sm:text-[10px] uppercase tracking-widest text-[#C8A66A] flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Explore <ArrowRight size={10} />
+                  <h3 className="font-playfair text-lg sm:text-2xl font-semibold text-[#E8E0D8] mb-1">{cat.title}</h3>
+                  <p className="font-poppins text-xs text-[#E8E0D8]/60 mb-3 sm:mb-4 line-clamp-2">{cat.desc}</p>
+                  <span className="font-poppins text-[10px] uppercase tracking-widest text-[#C8A66A] flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Explore <ArrowRight size={12} />
                   </span>
                 </div>
               </Link>
@@ -183,7 +183,7 @@ export default function HomePage() {
       <section className="py-24 bg-[#1C1916]">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeader eyebrow="Loved By All" title="Best Sellers" />
-          <div className="grid grid-cols-4 gap-1.5 sm:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
             {BESTSELLERS.map((p) => <ProductCard key={p.id} {...p} />)}
           </div>
         </div>
