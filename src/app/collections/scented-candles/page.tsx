@@ -216,11 +216,11 @@ const CANDLES = [
   },
   {
     id: "candle-27",
-    name: "Glass Jar Candle - pack of 4",
+    name: "Glass Jar Candle (Pack of 4)",
     price: 349,
     image: "/images/glass-jar-candle.png",
-    notes: "Soft Rose | Velvet Petals | White Amber",
-    badge: "Signature"
+    notes: "Pack of 4 | Soft Rose | Velvet Petals",
+    badge: "Pack of 4"
   },
 ];
 

@@ -87,7 +87,7 @@ export function ProductCard({
         <div>
           <p className="font-poppins text-[8px] sm:text-[10px] uppercase tracking-widest text-[#C8A66A] mb-0.5">{category}</p>
           <h3 className="font-playfair text-xs sm:text-xl font-semibold text-[#E8E0D8] mb-0.5 sm:mb-1 line-clamp-2 leading-tight">{name}</h3>
-          {notes && <p className="font-poppins text-[9px] sm:text-xs text-[#E8E0D8]/60 mb-2 line-clamp-1 hidden sm:block">{notes}</p>}
+          {notes && <p className="font-poppins text-[9px] sm:text-xs text-[#E8E0D8]/70 mb-1.5 sm:mb-2 line-clamp-1">{notes}</p>}
         </div>
 
         <div className="mt-2">
