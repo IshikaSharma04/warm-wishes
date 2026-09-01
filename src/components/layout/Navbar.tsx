@@ -37,9 +37,14 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#C8A66A]/40 shadow-sm shrink-0">
-              <Image src="/images/logo.png" alt="Warm Wishes Logo" fill className="object-cover" />
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt="Warm Wishes Logo"
+              width={40}
+              height={40}
+              priority
+              className="w-10 h-10 rounded-full object-cover border border-[#C8A66A]/40 shadow-sm shrink-0"
+            />
             <span className="font-playfair text-2xl font-semibold text-[#E8E0D8] tracking-wide group-hover:text-[#C8A66A] transition-colors duration-300">
               Warm Wishes
             </span>
