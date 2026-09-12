@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Heart, ShoppingBag, Minus, Plus, Trash2 } from "lucide-react";
+import { Heart, ShoppingBag, Minus, Plus, Trash2, ZoomIn } from "lucide-react";
 import { useCartStore, useWishlistStore, MAX_CART_QTY } from "@/lib/store";
+import { ProductQuickView } from "./ProductQuickView";
 
 interface ProductCardProps {
   id: string;
@@ -31,6 +33,7 @@ export function ProductCard({
   const wishlisted = isWishlisted(id);
   const cartItem = items.find((i) => i.id === id);
   const qty = cartItem?.quantity ?? 0;
+  const [quickViewOpen, setQuickViewOpen] = useState(false);
 
   const handleAddToCart = () => {
     addItem({ id, name, price, image, category, quantity: 1 });
@@ -56,22 +59,47 @@ export function ProductCard({
   const waUrl = `https://wa.me/${whatsappNumber}?text=${waMessage}`;
 
   return (
+    <>
+    {quickViewOpen && (
+      <ProductQuickView
+        id={id}
+        name={name}
+        price={price}
+        image={image}
+        category={category}
+        badge={badge}
+        notes={notes}
+        whatsappNumber={whatsappNumber}
+        onClose={() => setQuickViewOpen(false)}
+      />
+    )}
     <div className="group bg-[#1C1916] rounded-xl sm:rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-black/40 transition-all duration-500 border border-[#C8A66A]/10 flex flex-col h-full">
       {/* Image */}
-      <div className="relative aspect-square overflow-hidden bg-[#141210]">
+      <div
+        className="relative aspect-square overflow-hidden bg-[#141210] cursor-pointer"
+        onClick={() => setQuickViewOpen(true)}
+        role="button"
+        aria-label={`Quick view ${name}`}
+      >
         <Image
           src={image}
           alt={name}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-700"
         />
+        {/* Quick-view overlay hint */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-full bg-white/0 group-hover:bg-white/15 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 scale-75 group-hover:scale-100">
+            <ZoomIn size={18} className="text-white" />
+          </div>
+        </div>
         {badge && (
           <span className="absolute top-1.5 left-1.5 sm:top-3 sm:left-3 bg-[#C8A66A] text-[#141210] font-poppins text-[8px] sm:text-[10px] uppercase tracking-wider px-1.5 py-0.5 sm:px-3 sm:py-1 rounded-full font-bold">
             {badge}
           </span>
         )}
         <button
-          onClick={handleWishlist}
+          onClick={(e) => { e.stopPropagation(); handleWishlist(); }}
           className="absolute top-1.5 right-1.5 sm:top-3 sm:right-3 w-7 h-7 sm:w-9 sm:h-9 bg-[#1C1916]/80 backdrop-blur rounded-full flex items-center justify-center shadow-sm hover:bg-[#2A1F1F] transition-colors border border-[#C8A66A]/20"
           aria-label="Wishlist"
         >
@@ -145,5 +173,6 @@ export function ProductCard({
         </div>
       </div>
     </div>
+    </>
   );
 }
