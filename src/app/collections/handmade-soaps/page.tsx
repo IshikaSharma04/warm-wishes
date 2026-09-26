@@ -27,7 +27,7 @@ export default function SoapsPage() {
       <CollectionHero
         title={<>Handmade<br/>Soaps</>}
         desc="Natural ingredients for gentle care and beautiful skin. Made with botanical goodness."
-        image="/images/soap-daisy.png"
+        image="/images/soaps/soap-daisy.png"
         imageAlt="Handmade Soaps"
         bullets={["Natural Ingredients", "Gentle On Skin", "Eco Friendly"]}
         imageLeft

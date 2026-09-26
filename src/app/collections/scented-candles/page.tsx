@@ -10,7 +10,7 @@ const CANDLES = [
     id: "candle-1",
     name: "Golden Petal Atelier Bouquet",
     price: 999,
-    image: "/images/flower-bouquet.png",
+    image: "/images/candles/flower-bouquet.png",
     notes: "Blooming Jasmine | Velvet Rose | Warm Sandalwood",
     badge: "Bestseller"
   },
@@ -20,13 +20,13 @@ const CANDLES = [
     notes: "Yellow Dahlia | Citrus Blossom | Sweet Nectar",
     price: 999,
     badge: "Limited Edition",
-    image: "/images/yellow-flower-bouquet.png",
+    image: "/images/candles/yellow-flower-bouquet.png",
   },
   {
     id: "candle-3",
     name: "Velvet Violet Botanical Keepsake",
     price: 999,
-    image: "/images/purple-floral-box.png",
+    image: "/images/candles/purple-floral-box.png",
     notes: "French Lavender | Wild Orchid | Purple Peony",
     badge: "Luxury Box",
   },
@@ -34,7 +34,7 @@ const CANDLES = [
     id: "candle-4",
     name: "Blossom Romance Gift Box",
     price: 999,
-    image: "/images/pink-floral-bouquet.png",
+    image: "/images/candles/pink-floral-bouquet.png",
     notes: "White Peony | Pink Rose | Soft Musk",
     badge: "Luxury Box"
   },
@@ -44,7 +44,7 @@ const CANDLES = [
     id: "candle-5",
     name: "Imperial Brass Saffron Urli",
     price: 249,
-    image: "/images/urli.png",
+    image: "/images/candles/urli.png",
     notes: "Sacred Marigold | Saffron Threads | Royal Oud",
     badge: "Heritage",
   },
@@ -52,7 +52,7 @@ const CANDLES = [
     id: "candle-6",
     name: "Pearl Blossom Urli",
     price: 249,
-    image: "/images/pearl-blossom-urli.png",
+    image: "/images/candles/pearl-blossom-urli.png",
     notes: "Cherry Blossom | White Tea | Frosted Musk",
   },
 
@@ -61,21 +61,21 @@ const CANDLES = [
     id: "candle-7",
     name: "Ethereal Glitter Rose Gel Glass",
     price: 299,
-    image: "/images/gel-jar candle1.png",
+    image: "/images/candles/gel-jar-candle1.png",
     notes: "Aesthetic | Fresh | Elegant"
   },
   {
     id: "candle-8",
     name: "Crystal Pearl Infusion Gel Glass",
     price: 299,
-    image: "/images/glass-pearl-candle.png",
+    image: "/images/candles/glass-pearl-candle.png",
     notes: "Aesthetic | Ocean Air | Fresh Glass"
   },
   {
     id: "candle-9",
     name: "Ocean Blue Daisy Gel Glass",
     price: 299,
-    image: "/images/blue-gel-daisy.png",
+    image: "/images/candles/blue-gel-daisy.png",
     notes: "Ocean Breeze | Fresh Air | Water Lily",
     badge: "New"
   },
@@ -85,7 +85,7 @@ const CANDLES = [
     id: "candle-10",
     name: "Hanging Floral Wax Sachets combo of 3",
     price: 420,
-    image: "/images/floral-sachets.png",
+    image: "/images/candles/floral-sachets.png",
     notes: "Aromatic Lavender | Fresh Linen",
     badge: "Aroma"
   },
@@ -93,14 +93,14 @@ const CANDLES = [
     id: "candle-11",
     name: "Orange Floral pearl Wax Sachet",
     price: 149,
-    image: "/images/orange-floral-sachet.png",
+    image: "/images/candles/orange-floral-sachet.png",
     notes: "Citrus Blossom | Bright Amber"
   },
   {
     id: "candle-12",
     name: "Daisy Pearl Wax Sachet",
     price: 149,
-    image: "/images/daisy-pearl-sachet.png",
+    image: "/images/candles/daisy-pearl-sachet.png",
     notes: "Fresh Daisy | Clean Linen"
   },
 
@@ -109,14 +109,14 @@ const CANDLES = [
     id: "candle-13",
     name: "Daisy Gift Box (pack of 4)",
     price: 249,
-    image: "/images/daisy-gift-set.png",
+    image: "/images/candles/daisy-gift-set.png",
     notes: "Fresh Daisy | Citrus | Wildflower"
   },
   {
     id: "candle-14",
     name: "Elegant Peony pack of 4",
     price: 499,
-    image: "/images/rose-peony-box.png",
+    image: "/images/candles/rose-peony-box.png",
     notes: "Rich Rose | Peony | Soft Vanilla",
     badge: "Gift Box"
   },
@@ -124,14 +124,14 @@ const CANDLES = [
     id: "candle-15",
     name: "Motichoor & Modak Candle Set",
     price: 299,
-    image: "/images/modak-motichoor.png",
+    image: "/images/candles/modak-motichoor.png",
     notes: "Festive | Sweet Cardamom | Saffron"
   },
   {
     id: "candle-16",
     name: "Motichoor Laddoo Candle",
     price: 299,
-    image: "/images/ladoo-candle.png",
+    image: "/images/candles/ladoo-candle.png",
     notes: "Festive | Sweet Cardamom | Saffron"
   },
 
@@ -140,21 +140,21 @@ const CANDLES = [
     id: "candle-17",
     name: "Blue Teddy Bear Heart Candle",
     price: 179,
-    image: "/images/teddy-bear.png",
+    image: "/images/candles/teddy-bear.png",
     notes: "Cute | Ocean Breeze | Comforting"
   },
   {
     id: "candle-18",
     name: "Single Red Rose Teddy Candle",
     price: 179,
-    image: "/images/red-rose-teddy.png",
+    image: "/images/candles/red-rose-teddy.png",
     notes: "Crimson Rose | Musk | Sweet Amber"
   },
   {
     id: "candle-19",
     name: "Rose Teddy Bear Pair Set",
     price: 349,
-    image: "/images/rose-teddy-pair.png",
+    image: "/images/gift-hampers/rose-teddy-pair.png",
     notes: "Red Velvet | Soft Cotton | Honey",
     badge: "Set of 2"
   },
@@ -162,14 +162,14 @@ const CANDLES = [
     id: "candle-20",
     name: "Pastel Bubble Cube Candle - pack of 4",
     price: 299,
-    image: "/images/bubble-candle.png",
+    image: "/images/candles/bubble-candle.png",
     notes: "Ocean Breeze | Minimalist | Soft Cotton"
   },
   {
     id: "candle-21",
     name: "Single Bubble Candle - large",
     price: 279,
-    image: "/images/pink-bubble-gold-leaf.png",
+    image: "/images/candles/pink-bubble-gold-leaf.png",
     notes: "Sweet Blossom | Soft Vanilla | Cashmere",
     badge: "Aesthetic"
   },
@@ -179,7 +179,7 @@ const CANDLES = [
     id: "candle-22",
     name: "Red Heart Embed Glass Candle",
     price: 249,
-    image: "/images/red-heart-glass-candle.png",
+    image: "/images/candles/red-heart-glass-candle.png",
     notes: "Sweet Vanilla | Red Rose | Strawberry",
     badge: "Valentine Special"
   },
@@ -187,7 +187,7 @@ const CANDLES = [
     id: "candle-23",
     name: "Sunflower Jar Candle",
     price: 299,
-    image: "/images/sunflower-jar-candle.png",
+    image: "/images/candles/sunflower-jar-candle.png",
     notes: "Bright | Citrus | Sunflower",
     badge: "New"
   },
@@ -195,14 +195,14 @@ const CANDLES = [
     id: "candle-24",
     name: "Tealight Candle - pack of 6",
     price: 299,
-    image: "/images/tealight-candle.png",
+    image: "/images/candles/tealight-candle.png",
     notes: "Floral | Warm Vanilla | Creamy"
   },
   {
     id: "candle-25",
     name: "Single Peony Candle",
     price: 179,
-    image: "/images/peony-single-candle.png",
+    image: "/images/candles/peony-single-candle.png",
     notes: "Sweet Peony | Soft Rose | Blossom",
     badge: "Trending"
   },
@@ -210,7 +210,7 @@ const CANDLES = [
     id: "candle-26",
     name: "Creamy Vanilla Glass Jar Candle",
     price: 199,
-    image: "/images/creamy-vanilla-glass-jar-candle.png",
+    image: "/images/candles/creamy-vanilla-glass-jar-candle.png",
     notes: "Creamy Vanilla | Warm Honey | Soft Amber",
     badge: "Special Edition"
   },
@@ -218,7 +218,7 @@ const CANDLES = [
     id: "candle-27",
     name: "Glass Jar Candle (Pack of 4)",
     price: 349,
-    image: "/images/glass-jar-candle.png",
+    image: "/images/candles/glass-jar-candle.png",
     notes: "Pack of 4 | Soft Rose | Velvet Petals",
     badge: "Pack of 4"
   },

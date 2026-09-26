@@ -33,7 +33,7 @@ const COLLECTIONS = [
     title: "Handmade Soaps",
     desc: "Natural, gentle & nourishing for beautiful skin.",
     link: "/collections/handmade-soaps",
-    image: "/images/soap-daisy.png",
+    image: "/images/soaps/soap-daisy.png",
     bg: "bg-[#1A201A]",
   },
   {

@@ -18,10 +18,10 @@ function InstagramIcon({ size = 20 }: { size?: number }) {
 }
 
 const BESTSELLERS = [
-  { id: "candle-1", name: "Golden Bloom Flower Bouquet", price: 999, image: "/images/flower-bouquet.png", category: "Scented Candles", notes: "Floral | Jasmine | Sandalwood", badge: "Bestseller" },
+  { id: "candle-1", name: "Golden Bloom Flower Bouquet", price: 999, image: "/images/candles/flower-bouquet.png", category: "Scented Candles", notes: "Floral | Jasmine | Sandalwood", badge: "Bestseller" },
   { id: "choc-1", name: "Assorted Truffles", price: 399, image: "/images/chocolates/chocolate-6-box.png", category: "Handmade Chocolates", notes: "Dark | Silky | Premium", badge: "Bestseller" },
-  { id: "soap-1", name: "Single Bubble Candle", price: 279, image: "/images/pink-bubble-gold-leaf.png", category: "Handmade Soaps", notes: "Soothing | Floral | Calming" },
-  { id: "candle-4", name: "Sunflower Garden Jar Candle", price: 299, image: "/images/sunflower-jar-candle.png", category: "Scented Candles", notes: "Bright | Citrus | Sunflower", badge: "New" },
+  { id: "soap-1", name: "Single Bubble Candle", price: 279, image: "/images/candles/pink-bubble-gold-leaf.png", category: "Handmade Soaps", notes: "Soothing | Floral | Calming" },
+  { id: "candle-4", name: "Sunflower Garden Jar Candle", price: 299, image: "/images/candles/sunflower-jar-candle.png", category: "Scented Candles", notes: "Bright | Citrus | Sunflower", badge: "New" },
 ];
 const REVIEWS = [
   { name: "Priya M.", text: "Absolutely stunning packaging and the candles smell divine. Gifted to my mother and she was over the moon!", rating: 5 },
@@ -30,9 +30,9 @@ const REVIEWS = [
 ];
 
 const CATEGORIES = [
-  { title: "Scented Candles", desc: "Hand-poured with premium fragrances", link: "/collections/scented-candles", image: "/images/gel-jar candle1.png" },
+  { title: "Scented Candles", desc: "Hand-poured with premium fragrances", link: "/collections/scented-candles", image: "/images/candles/gel-jar-candle1.png" },
   { title: "Handmade Chocolates", desc: "Artisan chocolates with finest ingredients", link: "/collections/handmade-chocolates", image: "/images/choco-new.png" },
-  { title: "Handmade Soaps", desc: "Natural, gentle & nourishing for beautiful skin", link: "/collections/handmade-soaps", image: "/images/soap-daisy.png" },
+  { title: "Handmade Soaps", desc: "Natural, gentle & nourishing for beautiful skin", link: "/collections/handmade-soaps", image: "/images/soaps/soap-daisy.png" },
   { title: "Gift Hampers", desc: "Curated for every celebration & occasion", link: "/collections/gift-hampers", image: "/images/gift-hamper.png" },
 ];
 
@@ -44,12 +44,12 @@ const WHY_US = [
 ];
 
 const INSTA_POSTS = [
-  { img: "/images/diwali-999.png", alt: "Diwali Hamper" },
-  { img: "/images/valentine-599.png", alt: "Valentine Gift Hamper" },
-  { img: "/images/flower-bouquet.png", alt: "Bouquet Candle" },
-  { img: "/images/ganesh-599.png", alt: "Ganesh Chaturthi Hamper" },
+  { img: "/images/diwali-hampers/diwali-999.png", alt: "Diwali Hamper" },
+  { img: "/images/gift-hampers/valentine-599.png", alt: "Valentine Gift Hamper" },
+  { img: "/images/candles/flower-bouquet.png", alt: "Bouquet Candle" },
+  { img: "/images/gift-hampers/ganesh-599.png", alt: "Ganesh Chaturthi Hamper" },
   { img: "/images/chocolates/chocolate-6-box.png", alt: "Handmade Chocolates" },
-  { img: "/images/pink-bubble-gold-leaf.png", alt: "Bubble Candle" },
+  { img: "/images/candles/pink-bubble-gold-leaf.png", alt: "Bubble Candle" },
 ];
 
 function SectionHeader({ eyebrow, title }: { eyebrow: string; title: string }) {

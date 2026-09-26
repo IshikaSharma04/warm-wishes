@@ -1,43 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { ProductCard } from "@/components/product/ProductCard";
 import { CollectionHero } from "@/components/product/CollectionHero";
 import { FeatureGrid } from "@/components/product/FeatureGrid";
 
 const HAMPERS = [
   {
-    id: "hamper-diwali-299",
-    name: "Diwali Shubh Labh Hamper",
-    price: 299,
-    image: "/images/diwali-299.png",
-    category: "Gift Hampers",
-    notes: "Hand-painted Diya + Daisy Candle + Motichoor Ladoo Candle + Chocolate Truffle",
-    badge: "Festive",
-  },
-  {
-    id: "hamper-diwali-599",
-    name: "Diwali Prosperity & Blessings Hamper",
-    price: 599,
-    image: "/images/diwali-599.png",
-    category: "Gift Hampers",
-    notes: "Mixed Nuts + Floral Urli Candle + Diya + 2 Ladoo Candles + Daisy Candle",
-    badge: "Bestseller",
-  },
-  {
-    id: "hamper-diwali-999",
-    name: "Grand Diwali Royale Celebration Hamper",
-    price: 999,
-    image: "/images/diwali-999.png",
-    category: "Gift Hampers",
-    notes: "Almonds & Cashews + Floral Urli + Glass Pearl candle + 4 Truffles + Diya + 2 Ladoo candle + 1 daisy candle",
-    badge: "Grand Festive",
-  },
-  {
     id: "hamper-valentine-599",
     name: "Valentine Rose & Romance Hamper",
     price: 599,
-    image: "/images/valentine-599.png",
+    image: "/images/gift-hampers/valentine-599.png",
     category: "Gift Hampers",
     notes: "Rose Teddy Candle + Peony Rose candle + Heart Glass Candle + 4 Heart Chocolates",
     badge: "Love Edition",
@@ -46,7 +21,7 @@ const HAMPERS = [
     id: "hamper-ganesh-299",
     name: "Ganesh Chaturthi Shubh Prasad Hamper",
     price: 299,
-    image: "/images/ganesh299.png",
+    image: "/images/gift-hampers/ganesh299.png",
     category: "Gift Hampers",
     notes: "Modak Candle + Motichoor Ladoo Candle + Daisy Flower Candle + tealight glass candle",
     badge: "Festive",
@@ -55,7 +30,7 @@ const HAMPERS = [
     id: "hamper-ganesh-599",
     name: "Ganesh Chaturthi Grand Bappa Hamper",
     price: 599,
-    image: "/images/ganesh-599.png",
+    image: "/images/gift-hampers/ganesh-599.png",
     category: "Gift Hampers",
     notes: "2 Modak Candles + 2 Ladoo Candles + Floral Urli + tealight glass candle+ Artisan Truffle",
     badge: "Divine Edition",
@@ -80,6 +55,39 @@ export default function GiftHampersPage() {
         bullets={["Curated Selections", "Luxury Packaging", "Free Gift Note"]}
         imageLeft={false}
       />
+
+      {/* ── DIWALI COLLECTION BANNER ──────────────────────── */}
+      <section className="max-w-7xl mx-auto px-6 pt-16">
+        <Link
+          href="/collections/diwali-gift-hampers"
+          className="group relative block overflow-hidden rounded-3xl border border-[#C8A66A]/25 shadow-lg shadow-black/30 hover:border-[#C8A66A]/50 transition-colors duration-500"
+        >
+          <div className="relative h-56 sm:h-80 w-full">
+            <Image
+              src="/images/diwali-hampers/diwali-999.png"
+              alt="Diwali Gift Hampers"
+              fill
+              sizes="100vw"
+              className="object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#141210] via-[#141210]/80 to-[#141210]/20" />
+          </div>
+          <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-14">
+            <p className="font-poppins text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-[#C8A66A] mb-2 sm:mb-3">
+              Festive Collection
+            </p>
+            <h2 className="font-playfair text-2xl sm:text-4xl font-semibold text-[#E8E0D8] mb-2 sm:mb-3">
+              Diwali Gift Hampers
+            </h2>
+            <p className="font-poppins text-xs sm:text-sm text-[#E8E0D8]/70 max-w-md mb-4 sm:mb-6">
+              Painted diyas, motichoor ladoo candles, daisy bouquets & premium scented jar sets.
+            </p>
+            <span className="inline-flex items-center gap-2 self-start font-poppins text-[10px] sm:text-xs uppercase tracking-widest bg-[#C8A66A] hover:bg-[#b8935a] text-[#141210] font-bold px-5 sm:px-8 py-3 sm:py-4 rounded-md transition-colors">
+              Explore Diwali Collection <ArrowRight size={13} />
+            </span>
+          </div>
+        </Link>
+      </section>
 
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
