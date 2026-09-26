@@ -18,7 +18,7 @@ export default function DiwaliGiftHampersPage() {
       <CollectionHero
         title={<>Diwali Gift<br />Hampers</>}
         desc="Light up this Diwali with handcrafted hampers — painted diyas, motichoor ladoo candles, daisy candle bouquets and premium scented glass jars, all wrapped in festive luxury packaging."
-        image="/images/diwali-hampers/diwali-999.png"
+        image="/images/diwali-hampers/diwali-999.webp"
         imageAlt="Diwali Gift Hampers"
         bullets={["Hand-Painted Diyas", "Motichoor Ladoo Candles", "Scented Jar Sets"]}
         imageLeft={false}
@@ -32,7 +32,7 @@ export default function DiwaliGiftHampersPage() {
         {/* Bulk / Corporate Order CTA */}
         <div className="mt-20 mb-24 bg-[#1C1916] rounded-3xl p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 border border-[#C8A66A]/20 shadow-lg shadow-black/20 overflow-hidden relative">
           <Image
-            src="/images/diwali-hampers/ladoo-tealight-combo.jpg"
+            src="/images/diwali-hampers/ladoo-tealight-combo.webp"
             alt="Festive Diwali candle hamper"
             fill
             sizes="100vw"

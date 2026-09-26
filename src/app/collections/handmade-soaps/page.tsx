@@ -5,13 +5,13 @@ import { CollectionHero } from "@/components/product/CollectionHero";
 import { FeatureGrid } from "@/components/product/FeatureGrid";
 
 const SOAPS = [
-  { id: "soap-1", name: "Pastel Cloud Soap Box- pack of 4", price: 349, image: "/images/soaps/pastel-cloud-box-soap.png", notes: "Soothing | Floral | Calming", badge: "Bestseller" },
-  { id: "soap-2", name: "Dino-Mite Bar- Set of 3", price: 299, image: "/images/soaps/dino-mite-bar-soap-set.png", notes: "Romantic | Gentle | Floral" },
-  { id: "soap-3", name: "Cute kitty & Fish Set - pack of 4", price: 399, image: "/images/soaps/cute-critters-fish-set.png", notes: "Nourishing | Warm | Natural" },
-  { id: "soap-4", name: "Mini Zoo Party Box- set of 6", price: 249, image: "/images/soaps/mini-zoo-party-box.png", notes: "Assorted Animal Shapes | Gentle Moisture" },
-  { id: "soap-5", name: "Crystal Rose Embed Glycerin Bar", price:99 , image: "/images/soaps/crystal-rose-embed-bar.png", notes: "Clear Glycerin | Essential Rose Oil | Luxe" },
-  { id: "soap-6", name: "Blossom Relief Bar- single", price: 99, image: "/images/soaps/blossom-relief-bar.png", notes: "Purifying | Fresh | Herbal" },
-  { id: "soap-7", name: "Golden Grape Cluster soap", price: 349, image: "/images/soaps/grape-soap.png", notes: "Honey Glycerin | Shimmer Spheres | Radiant" },
+  { id: "soap-1", name: "Pastel Cloud Soap Box- pack of 4", price: 349, image: "/images/soaps/pastel-cloud-box-soap.webp", notes: "Soothing | Floral | Calming", badge: "Bestseller" },
+  { id: "soap-2", name: "Dino-Mite Bar- Set of 3", price: 299, image: "/images/soaps/dino-mite-bar-soap-set.webp", notes: "Romantic | Gentle | Floral" },
+  { id: "soap-3", name: "Cute kitty & Fish Set - pack of 4", price: 399, image: "/images/soaps/cute-critters-fish-set.webp", notes: "Nourishing | Warm | Natural" },
+  { id: "soap-4", name: "Mini Zoo Party Box- set of 6", price: 249, image: "/images/soaps/mini-zoo-party-box.webp", notes: "Assorted Animal Shapes | Gentle Moisture" },
+  { id: "soap-5", name: "Crystal Rose Embed Glycerin Bar", price:99 , image: "/images/soaps/crystal-rose-embed-bar.webp", notes: "Clear Glycerin | Essential Rose Oil | Luxe" },
+  { id: "soap-6", name: "Blossom Relief Bar- single", price: 99, image: "/images/soaps/blossom-relief-bar.webp", notes: "Purifying | Fresh | Herbal" },
+  { id: "soap-7", name: "Golden Grape Cluster soap", price: 349, image: "/images/soaps/grape-soap.webp", notes: "Honey Glycerin | Shimmer Spheres | Radiant" },
 ];
 
 const FEATURES = [
@@ -27,7 +27,7 @@ export default function SoapsPage() {
       <CollectionHero
         title={<>Handmade<br/>Soaps</>}
         desc="Natural ingredients for gentle care and beautiful skin. Made with botanical goodness."
-        image="/images/soaps/soap-daisy.png"
+        image="/images/soaps/soap-daisy.webp"
         imageAlt="Handmade Soaps"
         bullets={["Natural Ingredients", "Gentle On Skin", "Eco Friendly"]}
         imageLeft

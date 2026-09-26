@@ -231,7 +231,7 @@ export default function ContactPage() {
           <h2 className="font-playfair text-4xl font-semibold text-[#E8E0D8]">Follow Us On Instagram</h2>
         </div>
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
-          {["/images/candle-vanilla.png", "/images/chocolates.png", "/images/soaps.png", "/images/gift-hamper.png", "/images/candle-lavender.png", "/images/hero-gift-box.png"].map((src, i) => (
+          {["/images/candle-vanilla.webp", "/images/chocolates.webp", "/images/soaps.webp", "/images/gift-hamper.webp", "/images/candle-lavender.webp", "/images/hero-gift-box.webp"].map((src, i) => (
             <a href="https://instagram.com/warm__wishes" target="_blank" rel="noreferrer" key={i} className="relative aspect-square overflow-hidden group">
               <Image src={src} alt="Instagram" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-colors flex items-center justify-center">

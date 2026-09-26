@@ -69,7 +69,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl shadow-black/40 border border-[#C8A66A]/10">
-            <Image src="/images/gift-hamper.png" alt="Made With Love" fill className="object-cover" />
+            <Image src="/images/gift-hamper.webp" alt="Made With Love" fill className="object-cover" />
             <div className="absolute inset-0 bg-[#141210]/20" />
           </div>
         </div>

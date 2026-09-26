@@ -112,7 +112,7 @@ export function DownloadAppButton({ variant = "navbar" }: DownloadAppButtonProps
     return (
       <div className="bg-[#1C1916] border-b border-[#C8A66A]/20 px-3 py-2 flex items-center justify-between text-xs text-[#E8E0D8]">
         <div className="flex items-center gap-2">
-          <img src="/images/logo.png" alt="Logo" className="w-5 h-5 rounded-full object-cover border border-[#C8A66A]/40 shrink-0" />
+          <img src="/images/logo.webp" alt="Logo" className="w-5 h-5 rounded-full object-cover border border-[#C8A66A]/40 shrink-0" />
           <span className="font-poppins font-medium text-[11px] text-[#E8E0D8]">Install Warm Wishes App for a better experience</span>
         </div>
         <button

@@ -35,7 +35,7 @@ export function SplashScreen() {
         {/* Animated Emblem Logo */}
         <div className="relative w-28 h-28 sm:w-36 sm:h-36 mb-6 rounded-full overflow-hidden border-2 border-[#C8A66A]/40 shadow-2xl shadow-black/80 animate-pulse">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.webp"
             alt="Warm Wishes Logo"
             fill
             priority

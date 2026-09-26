@@ -12,7 +12,7 @@ const HAMPERS = [
     id: "hamper-valentine-599",
     name: "Valentine Rose & Romance Hamper",
     price: 599,
-    image: "/images/gift-hampers/valentine-599.png",
+    image: "/images/gift-hampers/valentine-599.webp",
     category: "Gift Hampers",
     notes: "Rose Teddy Candle + Peony Rose candle + Heart Glass Candle + 4 Heart Chocolates",
     badge: "Love Edition",
@@ -21,7 +21,7 @@ const HAMPERS = [
     id: "hamper-ganesh-299",
     name: "Ganesh Chaturthi Shubh Prasad Hamper",
     price: 299,
-    image: "/images/gift-hampers/ganesh299.png",
+    image: "/images/gift-hampers/ganesh299.webp",
     category: "Gift Hampers",
     notes: "Modak Candle + Motichoor Ladoo Candle + Daisy Flower Candle + tealight glass candle",
     badge: "Festive",
@@ -30,7 +30,7 @@ const HAMPERS = [
     id: "hamper-ganesh-599",
     name: "Ganesh Chaturthi Grand Bappa Hamper",
     price: 599,
-    image: "/images/gift-hampers/ganesh-599.png",
+    image: "/images/gift-hampers/ganesh-599.webp",
     category: "Gift Hampers",
     notes: "2 Modak Candles + 2 Ladoo Candles + Floral Urli + tealight glass candle+ Artisan Truffle",
     badge: "Divine Edition",
@@ -64,7 +64,7 @@ export default function GiftHampersPage() {
         >
           <div className="relative h-56 sm:h-80 w-full">
             <Image
-              src="/images/diwali-hampers/diwali-999.png"
+              src="/images/diwali-hampers/diwali-999.webp"
               alt="Diwali Gift Hampers"
               fill
               sizes="100vw"

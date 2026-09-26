@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     siteName: "Warm Wishes",
     images: [
       {
-        url: "/images/logo.png",
-        width: 800,
-        height: 800,
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
         alt: "Warm Wishes Logo",
       },
     ],
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Warm Wishes | Luxury Handcrafted Gifts",
     description: "Thoughtfully crafted candles, chocolates and handmade soaps designed to create memorable gifting experiences.",
-    images: ["/images/logo.png"],
+    images: ["/opengraph-image.png"],
   },
   appleWebApp: {
     capable: true,

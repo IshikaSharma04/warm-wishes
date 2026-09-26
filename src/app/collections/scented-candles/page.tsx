@@ -10,7 +10,7 @@ const CANDLES = [
     id: "candle-1",
     name: "Golden Petal Atelier Bouquet",
     price: 999,
-    image: "/images/candles/flower-bouquet.png",
+    image: "/images/candles/flower-bouquet.webp",
     notes: "Blooming Jasmine | Velvet Rose | Warm Sandalwood",
     badge: "Bestseller"
   },
@@ -20,13 +20,13 @@ const CANDLES = [
     notes: "Yellow Dahlia | Citrus Blossom | Sweet Nectar",
     price: 999,
     badge: "Limited Edition",
-    image: "/images/candles/yellow-flower-bouquet.png",
+    image: "/images/candles/yellow-flower-bouquet.webp",
   },
   {
     id: "candle-3",
     name: "Velvet Violet Botanical Keepsake",
     price: 999,
-    image: "/images/candles/purple-floral-box.png",
+    image: "/images/candles/purple-floral-box.webp",
     notes: "French Lavender | Wild Orchid | Purple Peony",
     badge: "Luxury Box",
   },
@@ -34,7 +34,7 @@ const CANDLES = [
     id: "candle-4",
     name: "Blossom Romance Gift Box",
     price: 999,
-    image: "/images/candles/pink-floral-bouquet.png",
+    image: "/images/candles/pink-floral-bouquet.webp",
     notes: "White Peony | Pink Rose | Soft Musk",
     badge: "Luxury Box"
   },
@@ -44,7 +44,7 @@ const CANDLES = [
     id: "candle-5",
     name: "Imperial Brass Saffron Urli",
     price: 249,
-    image: "/images/candles/urli.png",
+    image: "/images/candles/urli.webp",
     notes: "Sacred Marigold | Saffron Threads | Royal Oud",
     badge: "Heritage",
   },
@@ -52,7 +52,7 @@ const CANDLES = [
     id: "candle-6",
     name: "Pearl Blossom Urli",
     price: 249,
-    image: "/images/candles/pearl-blossom-urli.png",
+    image: "/images/candles/pearl-blossom-urli.webp",
     notes: "Cherry Blossom | White Tea | Frosted Musk",
   },
 
@@ -61,21 +61,21 @@ const CANDLES = [
     id: "candle-7",
     name: "Ethereal Glitter Rose Gel Glass",
     price: 299,
-    image: "/images/candles/gel-jar-candle1.png",
+    image: "/images/candles/gel-jar-candle1.webp",
     notes: "Aesthetic | Fresh | Elegant"
   },
   {
     id: "candle-8",
     name: "Crystal Pearl Infusion Gel Glass",
     price: 299,
-    image: "/images/candles/glass-pearl-candle.png",
+    image: "/images/candles/glass-pearl-candle.webp",
     notes: "Aesthetic | Ocean Air | Fresh Glass"
   },
   {
     id: "candle-9",
     name: "Ocean Blue Daisy Gel Glass",
     price: 299,
-    image: "/images/candles/blue-gel-daisy.png",
+    image: "/images/candles/blue-gel-daisy.webp",
     notes: "Ocean Breeze | Fresh Air | Water Lily",
     badge: "New"
   },
@@ -93,14 +93,14 @@ const CANDLES = [
     id: "candle-11",
     name: "Orange Floral pearl Wax Sachet",
     price: 149,
-    image: "/images/candles/orange-floral-sachet.png",
+    image: "/images/candles/orange-floral-sachet.webp",
     notes: "Citrus Blossom | Bright Amber"
   },
   {
     id: "candle-12",
     name: "Daisy Pearl Wax Sachet",
     price: 149,
-    image: "/images/candles/daisy-pearl-sachet.png",
+    image: "/images/candles/daisy-pearl-sachet.webp",
     notes: "Fresh Daisy | Clean Linen"
   },
 
@@ -109,14 +109,14 @@ const CANDLES = [
     id: "candle-13",
     name: "Daisy Gift Box (pack of 4)",
     price: 249,
-    image: "/images/candles/daisy-gift-set.png",
+    image: "/images/candles/daisy-gift-set.webp",
     notes: "Fresh Daisy | Citrus | Wildflower"
   },
   {
     id: "candle-14",
     name: "Elegant Peony pack of 4",
     price: 499,
-    image: "/images/candles/rose-peony-box.png",
+    image: "/images/candles/rose-peony-box.webp",
     notes: "Rich Rose | Peony | Soft Vanilla",
     badge: "Gift Box"
   },
@@ -124,14 +124,14 @@ const CANDLES = [
     id: "candle-15",
     name: "Motichoor & Modak Candle Set",
     price: 299,
-    image: "/images/candles/modak-motichoor.png",
+    image: "/images/candles/modak-motichoor.webp",
     notes: "Festive | Sweet Cardamom | Saffron"
   },
   {
     id: "candle-16",
     name: "Motichoor Laddoo Candle",
     price: 299,
-    image: "/images/candles/ladoo-candle.png",
+    image: "/images/candles/ladoo-candle.webp",
     notes: "Festive | Sweet Cardamom | Saffron"
   },
 
@@ -140,7 +140,7 @@ const CANDLES = [
     id: "candle-17",
     name: "Blue Teddy Bear Heart Candle",
     price: 179,
-    image: "/images/candles/teddy-bear.png",
+    image: "/images/candles/teddy-bear.webp",
     notes: "Cute | Ocean Breeze | Comforting"
   },
   {
@@ -162,14 +162,14 @@ const CANDLES = [
     id: "candle-20",
     name: "Pastel Bubble Cube Candle - pack of 4",
     price: 299,
-    image: "/images/candles/bubble-candle.png",
+    image: "/images/candles/bubble-candle.webp",
     notes: "Ocean Breeze | Minimalist | Soft Cotton"
   },
   {
     id: "candle-21",
     name: "Single Bubble Candle - large",
     price: 279,
-    image: "/images/candles/pink-bubble-gold-leaf.png",
+    image: "/images/candles/pink-bubble-gold-leaf.webp",
     notes: "Sweet Blossom | Soft Vanilla | Cashmere",
     badge: "Aesthetic"
   },
@@ -187,7 +187,7 @@ const CANDLES = [
     id: "candle-23",
     name: "Sunflower Jar Candle",
     price: 299,
-    image: "/images/candles/sunflower-jar-candle.png",
+    image: "/images/candles/sunflower-jar-candle.webp",
     notes: "Bright | Citrus | Sunflower",
     badge: "New"
   },
@@ -210,7 +210,7 @@ const CANDLES = [
     id: "candle-26",
     name: "Creamy Vanilla Glass Jar Candle",
     price: 199,
-    image: "/images/candles/creamy-vanilla-glass-jar-candle.png",
+    image: "/images/candles/creamy-vanilla-glass-jar-candle.webp",
     notes: "Creamy Vanilla | Warm Honey | Soft Amber",
     badge: "Special Edition"
   },
@@ -218,7 +218,7 @@ const CANDLES = [
     id: "candle-27",
     name: "Glass Jar Candle (Pack of 4)",
     price: 349,
-    image: "/images/candles/glass-jar-candle.png",
+    image: "/images/candles/glass-jar-candle.webp",
     notes: "Pack of 4 | Soft Rose | Velvet Petals",
     badge: "Pack of 4"
   },
@@ -237,7 +237,7 @@ export default function ScentedCandlesPage() {
       <CollectionHero
         title={<>Scented<br />Candles</>}
         desc="Hand-poured with love and premium fragrances for a soothing, luxurious experience in your space."
-        image="/images/hero-scented-candles.png"
+        image="/images/hero-scented-candles.webp"
         imageAlt="Scented Candles"
         bullets={["45+ Hr Burn Time", "Premium Soy Wax", "Handcrafted Quality"]}
       />

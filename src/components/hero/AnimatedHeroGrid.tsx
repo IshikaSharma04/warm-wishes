@@ -4,17 +4,17 @@ import Image from "next/image";
 
 // Unique items covering candles, bouquet, chocolates, soaps, and gift hampers
 const column1 = [
-  "/images/candles/flower-bouquet.png",
-  "/images/candles/yellow-flower-bouquet.png",
-  "/images/candles/sunflower-jar-candle.png",
-  "/images/soaps/soap-daisy.png",
+  "/images/candles/flower-bouquet.webp",
+  "/images/candles/yellow-flower-bouquet.webp",
+  "/images/candles/sunflower-jar-candle.webp",
+  "/images/soaps/soap-daisy.webp",
 ];
 
 const column2 = [
-  "/images/gift-hamper.png",
-  "/images/candles/rose-peony-box.png", // Encoded space to prevent missing image breaks
+  "/images/gift-hamper.webp",
+  "/images/candles/rose-peony-box.webp", // Encoded space to prevent missing image breaks
   "/images/gift-hampers.png",
-  "/images/candles/pink-floral-bouquet.png",
+  "/images/candles/pink-floral-bouquet.webp",
 ];
 
 export function AnimatedHeroGrid() {

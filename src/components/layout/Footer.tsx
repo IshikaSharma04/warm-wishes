@@ -13,7 +13,7 @@ export function Footer() {
           <div className="space-y-5">
             <Link href="/" className="flex items-center gap-3 group">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Warm Wishes Logo"
                 width={48}
                 height={48}

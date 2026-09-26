@@ -5,7 +5,7 @@ export default function Loading() {
     <div className="min-h-[70vh] bg-[#141210] flex flex-col items-center justify-center gap-4 text-center px-6">
       <div className="relative w-20 h-20 rounded-full overflow-hidden border border-[#C8A66A]/40 shadow-xl animate-pulse">
         <Image
-          src="/images/logo.png"
+          src="/images/logo.webp"
           alt="Warm Wishes Loading"
           fill
           priority

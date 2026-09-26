@@ -39,7 +39,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 sm:gap-3 group shrink-0">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Warm Wishes Logo"
               width={56}
               height={56}

@@ -5,10 +5,10 @@ import { CollectionHero } from "@/components/product/CollectionHero";
 import { FeatureGrid } from "@/components/product/FeatureGrid";
 
 const CHOCOLATES = [
-  { id: "choc-1", name: "Velvet Cocoa Truffles", price: 99, image: "/images/chocolates/chocolate-2-box.png", notes: "Rich Dark | Silky Ganache | Artisanal", badge: "Bestseller" },
-  { id: "choc-2", name: "Roasted Almond Squares", price: 199, image: "/images/chocolates/chocolate-4-box.png", notes: "Crunchy Nut | Creamy Milk | Indulgent" },
-  { id: "choc-3", name: "Golden Hazelnut Rochers", price: 399, image: "/images/chocolates/chocolate-6-box.png", notes: "Edible Gold | Roasted Nut | Luxe Dark" },
-  { id: "choc-4", name: "Petite Bonbon Assortment", price: 599, image: "/images/chocolates/chocolate-10-box.png", notes: "Hand-poured | Multi-Flavour | Grand Gift", badge: "New" },
+  { id: "choc-1", name: "Velvet Cocoa Truffles", price: 99, image: "/images/chocolates/chocolate-2-box.webp", notes: "Rich Dark | Silky Ganache | Artisanal", badge: "Bestseller" },
+  { id: "choc-2", name: "Roasted Almond Squares", price: 199, image: "/images/chocolates/chocolate-4-box.webp", notes: "Crunchy Nut | Creamy Milk | Indulgent" },
+  { id: "choc-3", name: "Golden Hazelnut Rochers", price: 399, image: "/images/chocolates/chocolate-6-box.webp", notes: "Edible Gold | Roasted Nut | Luxe Dark" },
+  { id: "choc-4", name: "Petite Bonbon Assortment", price: 599, image: "/images/chocolates/chocolate-10-box.webp", notes: "Hand-poured | Multi-Flavour | Grand Gift", badge: "New" },
 ];
 
 const FEATURES = [
@@ -24,7 +24,7 @@ export default function ChocolatesPage() {
       <CollectionHero
         title={<>Handmade<br/>Chocolates</>}
         desc="Artisan chocolates crafted with the finest ingredients for a rich, indulgent experience."
-        image="/images/chocolates.png"
+        image="/images/chocolates.webp"
         imageAlt="Handmade Chocolates"
         bullets={["Finest Ingredients", "No Preservatives", "Made With Love"]}
         imageLeft={false}
