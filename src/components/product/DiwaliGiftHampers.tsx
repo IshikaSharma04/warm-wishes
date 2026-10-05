@@ -43,12 +43,22 @@ export const DIWALI_HAMPERS: DiwaliHamper[] = [
   },
   {
     id: "hamper-diwali-999",
-    name: "Grand Diwali Royale Celebration Hamper",
+    name: "Diwali Royale Grandeur Hamper",
     price: 999,
     image: "/images/diwali-hampers/diwali-999.webp",
     category: "Gift Hampers",
     notes: "Almonds & Cashews + Floral Urli + Glass Pearl Candle + 4 Truffles + Diya + 2 Ladoo + 1 Daisy",
     badge: "Grand Festive",
+    group: "hampers",
+  },
+  {
+    id: "hamper-diwali-1499",
+    name: "Diwali Premium Celebration Hamper",
+    price: 1499,
+    image: "/images/diwali-hampers/diwali-1499.webp",
+    category: "Gift Hampers",
+    notes: "Exclusive Assortment of Sweets, Dry Fruits, Candles, and Diyas",
+    badge: "Premium",
     group: "hampers",
   },
 
@@ -65,7 +75,7 @@ export const DIWALI_HAMPERS: DiwaliHamper[] = [
   {
     id: "hamper-diwali-tealight-diya",
     name: "Daisy Candle & Diya Festive Box",
-    price: 449,
+    price: 179,
     image: "/images/diwali-hampers/tealight-diya-combo.webp",
     category: "Gift Hampers",
     notes: "2 Hand-Painted Diyas + Purple & Pink Daisy Candles",
@@ -123,7 +133,7 @@ export const DIWALI_HAMPERS: DiwaliHamper[] = [
   {
     id: "diwali-floral-tealight-set4",
     name: "Floral Tealight Candles — Pack of 4",
-    price: 149,
+    price: 179,
     image: "/images/diwali-hampers/tealight-set-of-4.webp",
     category: "Diwali Specials",
     notes: "Pink, Purple & White Daisy Tealight Jars",
@@ -151,8 +161,8 @@ export const DIWALI_HAMPERS: DiwaliHamper[] = [
   },
   {
     id: "diwali-tealight-mix-pack6",
-    name: "Floral Tealight Candles — Pack of 6",
-    price: 149,
+    name: "Floral Tealight Candles — Pack of 10",
+    price: 199,
     image: "/images/diwali-hampers/tealight-set.webp",
     category: "Diwali Specials",
     notes: "Assorted Floral Tealight Jars in Gift Box",
