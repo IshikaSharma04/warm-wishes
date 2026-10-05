@@ -60,6 +60,7 @@ export const DIWALI_HAMPERS: DiwaliHamper[] = [
     notes: "Exclusive Assortment of Sweets, Dry Fruits, Candles, and Diyas",
     badge: "Premium",
     group: "hampers",
+    
   },
 
   // ── 2. Festive boxes ───────────────────────────────
